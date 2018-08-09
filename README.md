@@ -6,6 +6,8 @@ Based on user's input of 10 survey questions, calculates the closest compatible 
 
 The program uses express to select paths for pages to direct to depending on the URL path.  'Home' annd 'survey' takes to the respective pages, any other route defaults to the original home page.  The program also requires body-parser to parse the data response.
 
+THe program also involves creating and hosting a local server, which using node to run it and heroku to deploy it to the web.
+
 Why the project is useful
 
 Helps the user find their best matched friend based on compatibility.
