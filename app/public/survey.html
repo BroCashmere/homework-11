@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h3>Survey Questions</h3>
+    <hr>
+    <h4>About You</h4>
+    <h5>Name (Required)</h5>
+    <input type="text" id="name" class="form-control" required>
+
+    <h5>Link to Photo Image (Required)</h5>
+    <input type="text" id="photo" class="form-control" required>
+
+    <hr>
+
+    <form>
+      <div class="form-group">
+        <div class="form-group">
+          <h4>Question 1</h4>
+          <p>You enjoy the outdoors.</p>
+          <select class="form-control" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h4>Question 2</h4>
+          <p>You like staying in reality and feeling grounded.</p>
+          <select class="form-control" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h4>Question 3</h4>
+          <p>You believe in a higher power.</p>
+          <select class="form-control" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h4>Question 4</h4>
+          <p>You enjoy social situations and large parties.</p>
+          <select class="form-control" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h4>Question 5</h4>
+          <p>You like to go out on Friday nights.</p>
+          <select class="form-control" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h4>Question 6</h4>
+          <p>You prioritize your alone time.</p>
+          <select class="form-control" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h4>Question 7</h4>
+          <p>You enjoy staying in on the weekends.</p>
+          <select class="form-control" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h4>Question 8</h4>
+          <p>You like being the center of attention.</p>
+          <select class="form-control" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h4>Question 9</h4>
+          <p>You like to play sports.</p>
+          <select class="form-control" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h4>Question 10</h4>
+          <p>You enjoy travelling and experiencing different cultures.</p>
+          <select class="form-control" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+
+    </form>
+
+    <button type="submit" class="btn-primary" id="submit">Submit</button>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="results-modal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Best Match</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5 id="match-name"></h5>
+            <img id="match-img" src="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+      $("#submit").on("click", function (event) {
+        event.preventDefault();
+
+        function checkForm() {
+          let completeAnswer = true;
+          $(".form-control").each(function () {
+            if ($(this).val() === "") {
+              completeAnswer = false;
+            }
+          });
+          return completeAnswer;
+        }
+
+        if (checkForm() === true) {
+          let friendsData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [
+              $("#q1").val(),
+              $("#q2").val(),
+              $("#q3").val(),
+              $("#q4").val(),
+              $("#q5").val(),
+              $("#q6").val(),
+              $("#q7").val(),
+              $("#q8").val(),
+              $("#q9").val(),
+              $("#q10").val()
+            ]
+          };
+
+          $.post("/api/friends", friendsData, function (data) {
+            $("#match-name").text(data.name);
+            $("#match-img").attr("src", data.photo);
+            $("#results-modal").modal("toggle");
+
+          });
+        } else {
+          alert("Please fill all fields.");
+        }
+      });
+
+
+      
+    </script>
+
+</body>
+
+</html>
